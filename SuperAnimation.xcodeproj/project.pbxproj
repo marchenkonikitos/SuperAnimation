@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0012EC208494040078040B /* fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0012EB208494040078040B /* fire.json */; };
 		1A2BF4A320848F02000E4960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BF4A220848F02000E4960 /* AppDelegate.swift */; };
 		1A2BF4A520848F02000E4960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BF4A420848F02000E4960 /* ViewController.swift */; };
 		1A2BF4A820848F02000E4960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BF4A620848F02000E4960 /* Main.storyboard */; };
 		1A2BF4AA20848F04000E4960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BF4A920848F04000E4960 /* Assets.xcassets */; };
 		1A2BF4AD20848F04000E4960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BF4AB20848F04000E4960 /* LaunchScreen.storyboard */; };
+		3CFF9D894446292B537C6CC6 /* Pods_SuperAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03578B7E1BDA77D80A86230A /* Pods_SuperAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03578B7E1BDA77D80A86230A /* Pods_SuperAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0012EB208494040078040B /* fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fire.json; sourceTree = "<group>"; };
 		1A2BF49F20848F02000E4960 /* SuperAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2BF4A220848F02000E4960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A2BF4A420848F02000E4960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		1A2BF4A920848F04000E4960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A2BF4AC20848F04000E4960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A2BF4AE20848F04000E4960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AA548C9D49A5C6682E9094 /* Pods-SuperAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperAnimation/Pods-SuperAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		E5DA228E2BEC71322BD7FF6E /* Pods-SuperAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperAnimation/Pods-SuperAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFF9D894446292B537C6CC6 /* Pods_SuperAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0012EA208494040078040B /* JSON animation */ = {
+			isa = PBXGroup;
+			children = (
+				1A0012EB208494040078040B /* fire.json */,
+			);
+			name = "JSON animation";
+			path = "SuperAnimation/JSON animation";
+			sourceTree = "<group>";
+		};
 		1A2BF49620848F02000E4960 = {
 			isa = PBXGroup;
 			children = (
 				1A2BF4A120848F02000E4960 /* SuperAnimation */,
+				1A0012EA208494040078040B /* JSON animation */,
 				1A2BF4A020848F02000E4960 /* Products */,
+				52C0085B489D9CAE303FD450 /* Pods */,
+				1C0548A35CF9889E419BED56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,23 @@
 			path = SuperAnimation;
 			sourceTree = "<group>";
 		};
+		1C0548A35CF9889E419BED56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03578B7E1BDA77D80A86230A /* Pods_SuperAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C0085B489D9CAE303FD450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA548C9D49A5C6682E9094 /* Pods-SuperAnimation.debug.xcconfig */,
+				E5DA228E2BEC71322BD7FF6E /* Pods-SuperAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A2BF4B120848F04000E4960 /* Build configuration list for PBXNativeTarget "SuperAnimation" */;
 			buildPhases = (
+				34364D5A4B845182FFE05BB2 /* [CP] Check Pods Manifest.lock */,
 				1A2BF49B20848F02000E4960 /* Sources */,
 				1A2BF49C20848F02000E4960 /* Frameworks */,
 				1A2BF49D20848F02000E4960 /* Resources */,
+				36B57ED2FDF5EEDE0B636EF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +163,50 @@
 				1A2BF4AD20848F04000E4960 /* LaunchScreen.storyboard in Resources */,
 				1A2BF4AA20848F04000E4960 /* Assets.xcassets in Resources */,
 				1A2BF4A820848F02000E4960 /* Main.storyboard in Resources */,
+				1A0012EC208494040078040B /* fire.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34364D5A4B845182FFE05BB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36B57ED2FDF5EEDE0B636EF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SuperAnimation/Pods-SuperAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperAnimation/Pods-SuperAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A2BF49B20848F02000E4960 /* Sources */ = {
@@ -278,6 +356,7 @@
 		};
 		1A2BF4B220848F04000E4960 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7AA548C9D49A5C6682E9094 /* Pods-SuperAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +375,7 @@
 		};
 		1A2BF4B320848F04000E4960 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DA228E2BEC71322BD7FF6E /* Pods-SuperAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
